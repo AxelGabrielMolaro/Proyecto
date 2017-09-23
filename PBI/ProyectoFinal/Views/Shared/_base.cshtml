@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "_base";
+}
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HiShop</title>
+    <!--Boostrap-->
+    <link href="~/Css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="~/Css/bootstrap-reboot.css" rel="stylesheet" />
+
+    <link href="~/Css/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Css/" rel="stylesheet" />
+
+    <script type="text/javascript" src="~/Js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/jquery-1.10.2.js"></script>
+
+  
+    <!--Home-->
+    <link href="~/Css/half-slider.css" rel="stylesheet" />
+    <script type="text/javascript" src="~/Js/popper.js"></script>
+    <script type="text/javascript" src="~/Js/gulpfile.js"></script>
+    <script type="text/javascript" src="~/Js/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Js/bootstrap.min.js"></script>
+
+    @RenderSection("librerias", required: false);
+</head>
+<body>
+    @RenderBody()
+
+
+    @RenderSection("pie", required: false)
+</body>
+</html> 
