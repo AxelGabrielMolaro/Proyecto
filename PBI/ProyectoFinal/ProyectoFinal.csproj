@@ -94,6 +94,8 @@
     <Content Include="Css\bootstrap-grid.min.css" />
     <Content Include="Css\bootstrap-reboot.css" />
     <Content Include="Css\bootstrap.css" />
+    <Content Include="Css\estilos.css" />
+    <Content Include="Css\Modal.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Img\controlDeStock.png" />
@@ -106,6 +108,7 @@
     <Content Include="Js\jquery-3.2.1.min.js" />
     <Content Include="Js\jquery.js" />
     <Content Include="Js\jquery.min.js" />
+    <Content Include="Js\Modal.js" />
     <Content Include="Js\popper.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -121,6 +124,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -136,6 +140,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Shared\usuarioMenuBase.cshtml" />
+    <Content Include="Views\Usuario\inicio.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

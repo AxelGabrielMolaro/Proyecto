@@ -4,31 +4,6 @@
     Layout = "~/Views/Shared/_base.cshtml";
 }
 
-<style>
-    nav {
-        background-color: darkorange;
-    }
-
-    footer {
-        background-color: darkorange;
-    }
-
-    .carousel-item div{
-        background-color: darkorange;
-        opacity: 0.9;
-    }
-
-    .carousel-item div h3 {
-        background-color: darkorange;
-        opacity: 1;
-    }
-        .carousel-item div p {
-            background-color: darkorange;
-            opacity: 100;
-        }
-
-
-</style>
  <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark  fixed-top navEstilos">
     <div class="container">
@@ -39,11 +14,11 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
-                       Ingresar
+                    <a href="#" class=" nav-link" role="button" data-toggle="modal" data-target="#login-modal">
+                        Ingresar
                         <span class="sr-only">(current)</span>
                     </a>
-                </li>
+                    </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="#">Registrarse</a>
@@ -55,6 +30,7 @@
 </nav>
 
 <header>
+ 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -97,6 +73,7 @@
 
 <!-- Page Content -->
 <section class="py-5">
+
     <div class="container">
         <h1>Buscar Productos</h1>
         <div>
@@ -123,3 +100,39 @@
     </div>
     <!-- /.container -->
 </footer>
+
+
+<!-------------------------------------------------------------------------------------------->
+
+<!-- MODAL-->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" align="center">
+                <img class="img-circle" id="img_logo" src="~/Img/Logo.png">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <!-- Begin # DIV Form -->
+            <div id="div-forms">
+
+                <!-- Begin # Login Form -->
+                <form id="login-form" action="/Usuario/inicio">
+                    <div class="modal-body">
+                        
+                        <input id="login_username" class="form-control" type="text" placeholder="Mail" >
+                        <input id="login_password" class="form-control" type="password" placeholder="Contraseña" >
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Ingresar</button>
+                        </div>
+                    </div>
+                </form>
+
+        </div>
+    </div>
+</div>
+<!-- END # MODAL LOGIN -->

@@ -1,0 +1,26 @@
+﻿nav {
+    background-color: darkorange;
+}
+
+footer {
+    background-color: darkorange;
+}
+
+.carousel-item div {
+    background-color: darkorange;
+    opacity: 0.9;
+}
+
+    .carousel-item div h3 {
+        background-color: darkorange;
+        opacity: 1;
+    }
+
+    .carousel-item div p {
+        background-color: darkorange;
+        opacity: 100;
+    }
+
+.btn-primary {
+    background-color: darkorange;
+}
